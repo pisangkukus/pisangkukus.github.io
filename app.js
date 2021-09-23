@@ -1,10 +1,3 @@
-const menuToggle = document.querySelector(".menu-toggle input");
-const nav = document.querySelector("nav ul");
-
-menuToggle.addEventListener("click", function () {
-  nav.classList.toggle("pop");
-});
-
 const intro = document.querySelector(".intro");
 const video = intro.querySelector("video");
 const text = intro.querySelector("h1");
@@ -21,8 +14,7 @@ let scene = new ScrollMagic.Scene({
   triggerElement: intro,
   triggerHook: 0,
 })
-
-  .addIndicators()
+  // .addIndicators()
   .setPin(intro)
   .addTo(controller);
 
